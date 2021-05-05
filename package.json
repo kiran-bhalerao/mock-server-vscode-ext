@@ -1,0 +1,49 @@
+{
+	"name": "mock-api-serve",
+	"displayName": "Mock API Server",
+	"description": "Create API Server with JSON files",
+	"version": "0.0.3",
+	"publisher": "kiran",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Callbackiran/mock-server-vscode-ext"
+	},
+	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.55.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"contributes": {
+		"commands": [
+			{
+				"command": "mockApiServer.stop",
+				"title": "Kill Mock API Server"
+			}
+		]
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"lint": "eslint . --ext .ts,.tsx",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/express": "^4.17.11",
+		"@types/node": "^15.0.1",
+		"@types/vscode": "^1.55.0",
+		"@typescript-eslint/eslint-plugin": "^4.16.0",
+		"@typescript-eslint/parser": "^4.16.0",
+		"eslint": "^7.21.0",
+		"typescript": "^4.2.2"
+	},
+	"dependencies": {
+		"express": "^4.17.1",
+		"killable": "^1.0.1"
+	}
+}
