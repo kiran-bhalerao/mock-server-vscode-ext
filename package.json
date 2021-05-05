@@ -2,7 +2,7 @@
 	"name": "mock-api-serve",
 	"displayName": "Mock API Server",
 	"description": "Create API Server with JSON files",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "kiran",
 	"repository": {
 		"type": "git",

@@ -21,6 +21,7 @@ Create Rest api with JSON file
 ![](images/step2.png)
 
 **3.** Thats it, your mock api is ready on port 9000
+
 ![](images/step3.png)
 
 ## Limitations
